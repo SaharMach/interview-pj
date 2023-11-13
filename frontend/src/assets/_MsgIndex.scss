@@ -1,0 +1,82 @@
+.layout{
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 100px auto;
+    gap: 30px;
+    padding: 30px;
+    background-color: aliceblue;
+    .add-msg {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        // position: relative;
+        // align-items: end;
+        background: rgba(211, 211, 211, 0.489);
+        padding: 10px;
+        button {
+            // position: relative;
+            align-self: flex-end;
+            width: 100px;
+            background-color: #1b80d8;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            padding: 0.6em 1.2em;
+            font-size: 1em;
+            font-weight: 500;
+            font-family: inherit;
+            cursor: pointer;
+            transition: border-color 0.25s;
+            color: #fff;     
+        }
+    }
+    .chat {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        height: 400px;
+        overflow-y: scroll;
+        padding: 15px;
+        // max-height: 500px;
+        .msgs-filter {
+            align-self: center;
+            margin-top: 10px;
+            // width: 80%;
+            width: 100%;
+            // height: 20px;
+            input {
+                width: 100%;
+                height: 30px;
+                border-radius: 3px;
+                border: 1px solid lightgray;
+            }
+        }
+        .msg{
+            display: flex;
+            gap: 10px;
+            img {
+                width: 50px;
+            }
+            &-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 10px;
+                .user-mail {
+                    font-weight: bold;
+                }
+                .user-text {
+                    // margin-top: 3px;
+                    align-self: start;
+                    color: rgb(172, 170, 170);
+                }
+            }
+           
+        }
+        
+    }
+}
+
